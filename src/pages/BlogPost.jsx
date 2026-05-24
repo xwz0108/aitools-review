@@ -433,7 +433,7 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{post.title} | AI Tools</title>
+        <title>{post.title + ' | AI Tools'}</title>
         <meta name="description" content={post.desc} />
       </Helmet>
       <Container maxWidth="md" sx={{ pt: 6, pb: 10, position:'relative', zIndex:1 }}>

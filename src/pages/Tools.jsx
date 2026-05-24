@@ -16,8 +16,8 @@ export default function Tools() {
   return (
     <>
       <Helmet>
-        <title>{title} — Tested & Ranked (2026) | AI Tools</title>
-        <meta name="description" content={`Compare the best ${title.toLowerCase()}. Honest reviews, pricing, and head-to-head comparisons.`} />
+        <title>{title + ' — Tested & Ranked (2026) | AI Tools'}</title>
+        <meta name="description" content={'Compare the best ' + title.toLowerCase() + '. Honest reviews, pricing, and comparisons.'} />
       </Helmet>
       <Container maxWidth="xl" sx={{ pt: 6, pb: 10, position: 'relative', zIndex: 1 }}>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>

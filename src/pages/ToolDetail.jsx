@@ -17,7 +17,7 @@ export default function ToolDetail() {
   return (
     <>
       <Helmet>
-        <title>{tool.name} Review 2026 — Is It Worth ${tool.price}/mo? | AI Tools</title>
+        <title>{tool.name + ' Review 2026 — Is It Worth $' + tool.price + '/mo? | AI Tools'}</title>
         <meta name="description" content={tool.desc} />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Product","name":tool.name,"description":tool.desc,"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":tool.rating}}})}</script>
       </Helmet>
