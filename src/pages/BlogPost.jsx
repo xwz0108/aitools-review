@@ -222,7 +222,7 @@ const POSTS = {
         ['Team features','Yes','Yes'],
       ]},
       { type:'h2', text:'The Verdict' },
-      { type:'p', text:'If you are a professional SEO who wants precise, data-driven optimization, Surfer SEO is worth the premium. If you want an all-in-one content research and writing tool at a reasonable price, Frase is the winner. At half the price, Frase delivers 80% of Surfer's value.' },
+      { type:'p', text:'If you are a professional SEO who wants precise, data-driven optimization, Surfer SEO is worth the premium. If you want an all-in-one content research and writing tool at a reasonable price, Frase is the winner. At half the price, Frase delivers most of the value.' },
     ],
   },
   'runway-vs-pika-synthesia': {
