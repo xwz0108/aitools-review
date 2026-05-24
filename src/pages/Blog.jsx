@@ -20,6 +20,10 @@ const posts = [
   { slug:'best-free-ai-tools-2026', title:'Best Free AI Tools That Actually Work in 2026', desc:'You do not need money for great AI tools. Here are the best free ones.', cat:'All', date:'June 2026' },
   { slug:'how-to-use-ai-for-affiliate-marketing', title:'How to Use AI Tools for Affiliate Marketing', desc:'Step-by-step guide to AI-powered affiliate content creation.', cat:'All', date:'June 2026' },
   { slug:'claude-vs-chatgpt-vs-gemini', title:'Claude vs ChatGPT vs Gemini: AI Assistant Battle', desc:'Three AI chatbots compared on reasoning, coding, and creativity.', cat:'AI Chatbot', date:'June 2026' },
+  { slug:'best-ai-stack-for-bloggers', title:'The Best AI Tool Stack for Bloggers 2026', desc:'Complete AI toolkit for content creators. Writing, SEO, images.', cat:'All', date:'June 2026' },
+  { slug:'leonardo-ai-review', title:'Leonardo AI Review: Best Midjourney Alternative?', desc:'In-depth review. Pros, cons, free tier analysis, and real examples.', cat:'AI Image', date:'June 2026' },
+  { slug:'is-ai-writing-worth-it', title:'Is AI Writing Software Worth It in 2026?', desc:'After 3 months of daily use. Honest take on whether it is worth paying for.', cat:'AI Writing', date:'June 2026' },
+  { slug:'ai-image-generation-guide', title:'AI Image Generation: Complete Beginner Guide', desc:'Everything about AI image generation. Tools, prompts, and best practices.', cat:'AI Image', date:'June 2026' },
 ]
 
 export default function Blog() {
