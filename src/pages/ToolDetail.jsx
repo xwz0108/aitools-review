@@ -61,7 +61,7 @@ export default function ToolDetail() {
           </Stack>
 
           {/* Price + Rating Card */}
-          <Paper variant="outlined" sx={{ p: 4, borderRadius: 4, mb: 5, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 2, border: '1px solid rgba(52,211,153,0.15)' }}>
+          <Paper variant="outlined" sx={{ p: 3, borderRadius: 4, mb: 5, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'nowrap', gap: 3, border: '1px solid rgba(52,211,153,0.15)' }}>
             <Box>
               <Typography variant="h3" fontWeight={800} className="gradient-text">${tool.price}<Typography component="span" variant="body1" color="#6b6f7e">/mo</Typography></Typography>
               <Typography variant="body2" color="text.secondary">{tool.free_tier}</Typography>
@@ -111,7 +111,9 @@ export default function ToolDetail() {
           {/* User Rating */}
           <Paper variant="outlined" sx={{ p:4, borderRadius:3, mb:5, bgcolor:'rgba(255,255,255,0.02)', textAlign:'center' }}>
             <Typography variant="h6" fontWeight={700} mb={2}>Rate This Tool</Typography>
-            <Rating value={Math.round(userRating)} onChange={(_, v) => v && handleRate(v)} size="large" sx={{ '& .MuiRating-iconFilled': { color: '#fbbf24' } }} />
+            <Box sx={{ display:'flex', justifyContent:'center' }}>
+              <Rating value={Math.round(userRating)} onChange={(_, v) => v && handleRate(v)} size="large" sx={{ '& .MuiRating-iconFilled': { color: '#fbbf24' } }} />
+            </Box>
             <Typography variant="body2" color="text.secondary" mt={1}>
               {voteCount > 0 ? `Community rating: ${userRating.toFixed(1)}/5 (${voteCount} votes)` : 'Be the first to rate this tool'}
             </Typography>
