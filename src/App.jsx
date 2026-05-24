@@ -10,6 +10,7 @@ const ToolDetail = lazy(() => import('./pages/ToolDetail'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const About = lazy(() => import('./pages/About'))
+const GoRedirect = lazy(() => import('./pages/GoRedirect'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 const theme = createTheme({
@@ -98,6 +99,7 @@ export default function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/go/:slug" element={<GoRedirect />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

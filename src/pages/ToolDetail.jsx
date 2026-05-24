@@ -45,7 +45,7 @@ export default function ToolDetail() {
                 <Typography variant="caption" color="text.secondary">{tool.reviews}+ reviews</Typography>
               </Box>
             </Stack>
-            <Button variant="contained" size="large" component="a" href={tool.website} target="_blank" endIcon={<ArrowForwardIcon />}>
+            <Button variant="contained" size="large" component={Link} to={`/go/${tool.slug}`} endIcon={<ArrowForwardIcon />}>
               Visit Website
             </Button>
           </Paper>
@@ -83,11 +83,21 @@ export default function ToolDetail() {
 
           {/* CTA */}
           <Box textAlign="center" mb={5}>
-            <Button variant="contained" size="large" component="a" href={tool.website} target="_blank">Try {tool.name} Now →</Button>
+            <Button variant="contained" size="large" component={Link} to={`/go/${tool.slug}`}>Try {tool.name} Now →</Button>
             <Typography variant="caption" color="text.secondary" display="block" mt={1}>When you purchase through our links, we may earn a commission at no extra cost.</Typography>
           </Box>
 
-          {/* Related */}
+          {/* Cross-promo to toolfast */}
+          <Box sx={{ mt: 5, pt: 5, borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+            <Paper sx={{ p: 4, borderRadius: 4, background: 'linear-gradient(135deg, rgba(167,139,250,0.08), rgba(5,150,105,0.08))', border: '1px solid rgba(167,139,250,0.15)', textAlign: 'center' }}>
+              <Typography variant="h5" fontWeight={700} mb={1}>🔧 Compare More AI Tools</Typography>
+              <Typography variant="body2" color="#a0a4b8" mb={3}>Use our free AI Tool Comparator and Commission Calculator to make smarter decisions.</Typography>
+              <Stack direction="row" spacing={2} justifyContent="center">
+                <Chip label="AI Tool Comparator →" component="a" href="https://toolfast.xxddsses.com/tools/ai-tool-comparator" clickable sx={{ fontWeight: 600, bgcolor: 'rgba(167,139,250,0.15)', color: '#c4b5fd' }} />
+                <Chip label="Commission Calculator →" component="a" href="https://toolfast.xxddsses.com/tools/commission-calculator" clickable sx={{ fontWeight: 600, bgcolor: 'rgba(52,211,153,0.15)', color: '#6ee7b7' }} />
+              </Stack>
+            </Paper>
+          </Box>
           {related.length > 0 && (
             <Box sx={{ pt: 5, borderTop: '1px solid rgba(255,255,255,0.06)' }}>
               <Typography variant="h5" fontWeight={700} mb={3}>Alternatives to {tool.name}</Typography>
