@@ -251,6 +251,7 @@ const POSTS = {
       { type:'p', text:'For creative video: Runway. For quick social media content: Pika. For corporate and training videos: Synthesia. They serve different needs — many teams use Runway or Pika for creative work and Synthesia for business communications.' },
     ],
   },
+};
 
 const DEFAULTS = { title: 'Article', desc: 'Coming soon', content: [{ type:'p', text:'This article is being written.' }] }
 
