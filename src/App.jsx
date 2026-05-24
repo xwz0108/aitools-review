@@ -13,6 +13,7 @@ const About = lazy(() => import('./pages/About'))
 const GoRedirect = lazy(() => import('./pages/GoRedirect'))
 const Compare = lazy(() => import('./pages/Compare'))
 const Leaderboard = lazy(() => import('./pages/Leaderboard'))
+const Directory = lazy(() => import('./pages/Directory'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 const theme = createTheme({
@@ -105,6 +106,7 @@ export default function App() {
                 <Route path="/compare/:slugs" element={<Compare />} />
                 <Route path="/top/:category" element={<Leaderboard />} />
                 <Route path="/top" element={<Leaderboard />} />
+                <Route path="/directory" element={<Directory />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

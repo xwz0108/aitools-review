@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Container, Typography, Box, Grid, Chip, Stack, Button, Paper, Rating } from '@mui/material'
+import { Container, Typography, Box, Grid, Chip, Stack, Button, Paper, Rating, IconButton } from '@mui/material'
 import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import ThumbUpIcon from '@mui/icons-material/ThumbUp'
 import tools from '../data/tools.json'
 
 const catNames = { 'ai-chatbot': 'AI Chatbot', 'ai-writing': 'AI Writing', 'ai-image': 'AI Image', 'ai-coding': 'AI Coding', 'ai-seo': 'AI SEO', 'ai-video': 'AI Video' }
@@ -13,6 +15,24 @@ export default function ToolDetail() {
   const related = tools.filter(t => t.category === tool?.category && t.id !== tool?.id).slice(0, 3)
 
   if (!tool) return <Container sx={{ pt: 10, textAlign: 'center' }}><Typography variant="h4">Tool not found</Typography></Container>
+
+  // User rating from localStorage
+  const [userRating, setUserRating] = useState(0)
+  const [voteCount, setVoteCount] = useState(0)
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('ratings_' + tool.id) || '{"rating":0,"count":0}')
+    setUserRating(data.rating)
+    setVoteCount(data.count)
+  }, [tool.id])
+
+  const handleRate = (val) => {
+    const data = JSON.parse(localStorage.getItem('ratings_' + tool.id) || '{"rating":0,"count":0}')
+    data.rating = ((data.rating * data.count) + val) / (data.count + 1)
+    data.count += 1
+    localStorage.setItem('ratings_' + tool.id, JSON.stringify(data))
+    setUserRating(data.rating)
+    setVoteCount(data.count)
+  }
 
   return (
     <>
@@ -86,6 +106,15 @@ export default function ToolDetail() {
             <Typography variant="h5" fontWeight={700} mb={1}>Who is it for?</Typography>
             <Typography variant="body1" color="#cdd6f4">{tool.best_for}</Typography>
             <Typography variant="body2" color="#6b6f7e" mt={1}>Affiliate commission: {tool.affiliate}</Typography>
+          </Paper>
+
+          {/* User Rating */}
+          <Paper variant="outlined" sx={{ p:4, borderRadius:3, mb:5, bgcolor:'rgba(255,255,255,0.02)', textAlign:'center' }}>
+            <Typography variant="h6" fontWeight={700} mb={2}>Rate This Tool</Typography>
+            <Rating value={Math.round(userRating)} onChange={(_, v) => v && handleRate(v)} size="large" sx={{ '& .MuiRating-iconFilled': { color: '#fbbf24' } }} />
+            <Typography variant="body2" color="text.secondary" mt={1}>
+              {voteCount > 0 ? `Community rating: ${userRating.toFixed(1)}/5 (${voteCount} votes)` : 'Be the first to rate this tool'}
+            </Typography>
           </Paper>
 
           {/* CTA */}

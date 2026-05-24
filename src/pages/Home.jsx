@@ -92,7 +92,7 @@ export default function Home() {
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1, mb: 10 }}>
         <Stack direction="row" justifyContent="space-between" alignItems="center" mb={4}>
           <Typography variant="h3" fontWeight={700}>Top Rated Tools</Typography>
-          <Button component={Link} to="/tools" endIcon={<ArrowForwardIcon />} sx={{ color: '#6ee7b7' }}>View All →</Button>
+          <Button component={Link} to="/top/all" endIcon={<ArrowForwardIcon />} sx={{ color: '#6ee7b7' }}>Full Rankings →</Button>
         </Stack>
         <Grid container spacing={3}>
           {topTools.map((tool, i) => {
