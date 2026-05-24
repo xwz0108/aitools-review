@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Container, Box, Typography, Chip, Stack } from '@mui/m
 import BoltIcon from '@mui/icons-material/Bolt'
 
 const categories = [
+  { name: 'AI Chatbot', slug: 'ai-chatbot' },
   { name: 'AI Writing', slug: 'ai-writing' },
   { name: 'AI Image', slug: 'ai-image' },
   { name: 'AI Coding', slug: 'ai-coding' },

@@ -5,8 +5,8 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { motion } from 'framer-motion'
 import tools from '../data/tools.json'
 
-const catNames = { 'ai-writing': 'AI Writing Tools', 'ai-image': 'AI Image Generators', 'ai-coding': 'AI Coding Assistants', 'ai-seo': 'AI SEO Tools', 'ai-video': 'AI Video Creators' }
-const catColors = { 'ai-writing': '#a78bfa', 'ai-image': '#f472b6', 'ai-coding': '#22d3ee', 'ai-seo': '#fbbf24', 'ai-video': '#f87171' }
+const catNames = { 'ai-chatbot': 'AI Chatbots', 'ai-writing': 'AI Writing Tools', 'ai-image': 'AI Image Generators', 'ai-coding': 'AI Coding Assistants', 'ai-seo': 'AI SEO Tools', 'ai-video': 'AI Video Creators' }
+const catColors = { 'ai-chatbot': '#818cf8', 'ai-writing': '#a78bfa', 'ai-image': '#f472b6', 'ai-coding': '#22d3ee', 'ai-seo': '#fbbf24', 'ai-video': '#f87171' }
 
 export default function Tools() {
   const { category } = useParams()

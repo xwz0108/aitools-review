@@ -350,5 +350,293 @@
     ],
     "best_for": "Corporate training and marketing teams",
     "website": "https://synthesia.io"
+  },
+  {
+    "id": "rytr",
+    "name": "Rytr",
+    "slug": "rytr",
+    "category": "ai-writing",
+    "price": 9,
+    "pricing": "month",
+    "rating": 4.0,
+    "reviews": 1600,
+    "affiliate": "30%",
+    "free_tier": "10K chars free",
+    "desc": "Ultra-affordable AI writer. Great for short-form content and beginners.",
+    "features": [
+      "40+ templates",
+      "Tone matching",
+      "Plagiarism checker",
+      "Browser extension",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Most affordable option",
+      "Good for short content",
+      "Fast generation speed"
+    ],
+    "cons": [
+      "Quality lags behind Jasper",
+      "Limited long-form capability",
+      "Fewer integrations"
+    ],
+    "best_for": "Budget-conscious writers and beginners",
+    "website": "https://rytr.me"
+  },
+  {
+    "id": "anyword",
+    "name": "Anyword",
+    "slug": "anyword",
+    "category": "ai-writing",
+    "price": 49,
+    "pricing": "month",
+    "rating": 4.1,
+    "reviews": 1200,
+    "affiliate": "Yes",
+    "free_tier": "7-day trial",
+    "desc": "Data-driven AI copywriting with predictive performance scores for each variation.",
+    "features": [
+      "Predictive scores",
+      "Blog wizard",
+      "Landing page builder",
+      "API access",
+      "Team workspaces"
+    ],
+    "pros": [
+      "Unique scoring system",
+      "Good for A/B testing",
+      "Data-driven approach"
+    ],
+    "cons": [
+      "Learning curve",
+      "Pricey for individuals",
+      "UI complexity"
+    ],
+    "best_for": "Enterprise marketing teams",
+    "website": "https://anyword.com"
+  },
+  {
+    "id": "dalle3",
+    "name": "DALL-E 3",
+    "slug": "dalle3",
+    "category": "ai-image",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.3,
+    "reviews": 4200,
+    "affiliate": "None",
+    "free_tier": "Via Bing",
+    "desc": "OpenAI flagship image generator built into ChatGPT. Simple prompts, great results.",
+    "features": [
+      "Natural language prompts",
+      "ChatGPT integration",
+      "Text rendering",
+      "Style variations",
+      "Safety filters"
+    ],
+    "pros": [
+      "Easiest to use",
+      "Excellent text rendering",
+      "Built into ChatGPT"
+    ],
+    "cons": [
+      "Expensive standalone",
+      "Less artistic control",
+      "No fine-tuning"
+    ],
+    "best_for": "Casual users and ChatGPT subscribers",
+    "website": "https://openai.com/dall-e-3"
+  },
+  {
+    "id": "firefly",
+    "name": "Adobe Firefly",
+    "slug": "firefly",
+    "category": "ai-image",
+    "price": 5,
+    "pricing": "month",
+    "rating": 4.2,
+    "reviews": 1800,
+    "affiliate": "Yes",
+    "free_tier": "25 credits/mo",
+    "desc": "Adobe AI image tool. Generative fill, text effects, and Photoshop integration.",
+    "features": [
+      "Generative fill",
+      "Text effects",
+      "Color palette",
+      "Photoshop integration",
+      "Vector recoloring"
+    ],
+    "pros": [
+      "Deep Adobe integration",
+      "Cheapest option",
+      "Commercially safe"
+    ],
+    "cons": [
+      "Limited standalone",
+      "Fewer art styles",
+      "Credit system"
+    ],
+    "best_for": "Adobe Creative Cloud users",
+    "website": "https://firefly.adobe.com"
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf",
+    "slug": "windsurf",
+    "category": "ai-coding",
+    "price": 15,
+    "pricing": "month",
+    "rating": 4.3,
+    "reviews": 1300,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "AI-powered IDE with Cascade. Agentic coding and multi-file refactoring.",
+    "features": [
+      "Cascade agent",
+      "Multi-file edits",
+      "Terminal agent",
+      "Context engine",
+      "Real-time collaboration"
+    ],
+    "pros": [
+      "Agentic coding unique",
+      "Strong multi-file support",
+      "Affordable mid-range"
+    ],
+    "cons": [
+      "Newer product",
+      "Smaller community",
+      "Some stability issues"
+    ],
+    "best_for": "Developers wanting agentic AI coding",
+    "website": "https://codeium.com/windsurf"
+  },
+  {
+    "id": "replit",
+    "name": "Replit AI",
+    "slug": "replit",
+    "category": "ai-coding",
+    "price": 25,
+    "pricing": "month",
+    "rating": 4.1,
+    "reviews": 2100,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "Browser-based IDE with AI agent. Build and deploy apps entirely in the cloud.",
+    "features": [
+      "AI agent",
+      "Cloud IDE",
+      "Deploy with one click",
+      "Collaboration",
+      "100+ languages"
+    ],
+    "pros": [
+      "No setup needed",
+      "Full cloud environment",
+      "Great for learning"
+    ],
+    "cons": [
+      "Limited for large projects",
+      "Internet required",
+      "Performance varies"
+    ],
+    "best_for": "Beginners and rapid prototyping",
+    "website": "https://replit.com"
+  },
+  {
+    "id": "marketmuse",
+    "name": "MarketMuse",
+    "slug": "marketmuse",
+    "category": "ai-seo",
+    "price": 149,
+    "pricing": "month",
+    "rating": 4.0,
+    "reviews": 900,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "Enterprise AI content strategy. Content inventory, topic modeling, and competitive analysis.",
+    "features": [
+      "Content inventory",
+      "Topic modeling",
+      "Competitive analysis",
+      "Content briefs",
+      "Optimization score"
+    ],
+    "pros": [
+      "Enterprise-grade strategy",
+      "Deep topic analysis",
+      "Content gap detection"
+    ],
+    "cons": [
+      "Very expensive",
+      "Overkill for small sites",
+      "Complex onboarding"
+    ],
+    "best_for": "Enterprise content teams",
+    "website": "https://marketmuse.com"
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "slug": "pika",
+    "category": "ai-video",
+    "price": 10,
+    "pricing": "month",
+    "rating": 4.2,
+    "reviews": 2200,
+    "affiliate": "Yes",
+    "free_tier": "250 credits",
+    "desc": "AI video generator for short social clips. Fast, fun, and viral content ready.",
+    "features": [
+      "Text to video",
+      "Image to video",
+      "Style presets",
+      "Sound effects",
+      "Social export sizes"
+    ],
+    "pros": [
+      "Fastest generation",
+      "Best for social media",
+      "Affordable"
+    ],
+    "cons": [
+      "Short clips only",
+      "Less professional",
+      "Limited editing"
+    ],
+    "best_for": "Social media creators and TikTokers",
+    "website": "https://pika.art"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "slug": "claude",
+    "category": "ai-chatbot",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.6,
+    "reviews": 3500,
+    "affiliate": "None",
+    "free_tier": "Free plan",
+    "desc": "Anthropic flagship AI assistant. Known for safe, thoughtful responses and long context windows.",
+    "features": [
+      "200K context",
+      "File upload",
+      "Code generation",
+      "Artifacts",
+      "Projects"
+    ],
+    "pros": [
+      "Longest context window",
+      "Nuanced responses",
+      "Strong coding ability"
+    ],
+    "cons": [
+      "No image generation",
+      "Occasional refusals",
+      "Fewer integrations than ChatGPT"
+    ],
+    "best_for": "Professionals needing deep analysis",
+    "website": "https://claude.ai"
   }
 ]

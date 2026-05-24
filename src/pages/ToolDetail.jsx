@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import tools from '../data/tools.json'
 
-const catNames = { 'ai-writing': 'AI Writing', 'ai-image': 'AI Image', 'ai-coding': 'AI Coding', 'ai-seo': 'AI SEO', 'ai-video': 'AI Video' }
+const catNames = { 'ai-chatbot': 'AI Chatbot', 'ai-writing': 'AI Writing', 'ai-image': 'AI Image', 'ai-coding': 'AI Coding', 'ai-seo': 'AI SEO', 'ai-video': 'AI Video' }
 
 export default function ToolDetail() {
   const { slug } = useParams()
@@ -27,7 +27,14 @@ export default function ToolDetail() {
           <Stack direction="row" spacing={3} alignItems="center" mb={4}>
             <Box sx={{ width: 80, height: 80, borderRadius: 4, background: 'linear-gradient(135deg, rgba(52,211,153,0.15), rgba(5,150,105,0.05))', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem', flexShrink: 0 }}>{tool.name[0]}</Box>
             <Box flex={1}>
-              <Chip label={catNames[tool.category]} size="small" sx={{ mb: 1, bgcolor: 'rgba(52,211,153,0.08)', color: '#6ee7b7', fontWeight: 600 }} />
+              <Stack direction="row" alignItems="center" spacing={0.5} mb={2}>
+              <Typography component={Link} to="/" variant="caption" color="#6b6f7e" sx={{ '&:hover': { color: '#6ee7b7' } }}>Home</Typography>
+              <Typography variant="caption" color="#3a3d4a">/</Typography>
+              <Typography component={Link} to={`/tools/${tool.category}`} variant="caption" color="#6b6f7e" sx={{ '&:hover': { color: '#6ee7b7' } }}>{catNames[tool.category]}</Typography>
+              <Typography variant="caption" color="#3a3d4a">/</Typography>
+              <Typography variant="caption" color="#6ee7b7">{tool.name}</Typography>
+            </Stack>
+            <Chip label={catNames[tool.category]} size="small" sx={{ mb: 1, bgcolor: 'rgba(52,211,153,0.08)', color: '#6ee7b7', fontWeight: 600 }} />
               <Typography variant="h2" fontSize={{ xs: '1.8rem', md: '2.4rem' }} fontWeight={700}>{tool.name}</Typography>
               <Typography variant="body1" color="#6b6f7e" mt={1}>{tool.desc}</Typography>
             </Box>
