@@ -14,6 +14,12 @@ const posts = [
   { slug:'cursor-vs-copilot', title:'Cursor vs GitHub Copilot: Developer Comparison', desc:'The two biggest AI coding tools go head to head. Which one wins?', cat:'AI Coding', date:'June 2026' },
   { slug:'surferseo-vs-frase', title:'Surfer SEO vs Frase: Content Optimization Battle', desc:'We tested both AI SEO tools on real blog posts. Side-by-side results.', cat:'AI SEO', date:'June 2026' },
   { slug:'runway-vs-pika-synthesia', title:'Runway vs Pika vs Synthesia: AI Video Showdown', desc:'Three AI video tools for three different use cases. How to choose.', cat:'AI Video', date:'June 2026' },
+  { slug:'rytr-review', title:'Rytr Review: Is the $9 AI Writer Any Good?', desc:'We tested the most affordable AI writing tool. Honest review.', cat:'AI Writing', date:'June 2026' },
+  { slug:'midjourney-vs-dalle3-vs-firefly', title:'Midjourney vs DALL-E 3 vs Firefly', desc:'Three AI image generators tested with identical prompts.', cat:'AI Image', date:'June 2026' },
+  { slug:'windsurf-vs-cursor-vs-copilot', title:'Windsurf vs Cursor vs Copilot: AI IDE Battle', desc:'Three AI coding tools tested on real development tasks.', cat:'AI Coding', date:'June 2026' },
+  { slug:'best-free-ai-tools-2026', title:'Best Free AI Tools That Actually Work in 2026', desc:'You do not need money for great AI tools. Here are the best free ones.', cat:'All', date:'June 2026' },
+  { slug:'how-to-use-ai-for-affiliate-marketing', title:'How to Use AI Tools for Affiliate Marketing', desc:'Step-by-step guide to AI-powered affiliate content creation.', cat:'All', date:'June 2026' },
+  { slug:'claude-vs-chatgpt-vs-gemini', title:'Claude vs ChatGPT vs Gemini: AI Assistant Battle', desc:'Three AI chatbots compared on reasoning, coding, and creativity.', cat:'AI Chatbot', date:'June 2026' },
 ]
 
 export default function Blog() {
