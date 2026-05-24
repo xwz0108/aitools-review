@@ -1,0 +1,44 @@
+import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+import { Container, Typography, Box, Grid, Chip, Paper } from '@mui/material'
+import { motion } from 'framer-motion'
+
+const posts = [
+  { slug:'best-ai-writing-tools-2026', title:'Best AI Writing Tools 2026 (Tested & Ranked)', desc:'We tested 5 AI writing tools head-to-head. See which one came out on top.', cat:'AI Writing', date:'June 2026' },
+  { slug:'best-ai-image-generators-2026', title:'Best AI Image Generators 2026 (Side-by-Side)', desc:'Midjourney vs Leonardo vs DALL-E 3. Which creates the best images?', cat:'AI Image', date:'June 2026' },
+  { slug:'best-ai-coding-assistants-2026', title:'Best AI Coding Assistants 2026 (Compared)', desc:'Cursor vs Copilot vs Windsurf. Which IDE assistant is right for you?', cat:'AI Coding', date:'June 2026' },
+  { slug:'jasper-vs-writesonic', title:'Jasper vs Writesonic: Which AI Writer Wins?', desc:'We compared pricing, features, and output quality side by side.', cat:'AI Writing', date:'Coming Soon' },
+  { slug:'midjourney-vs-leonardo', title:'Midjourney vs Leonardo AI: Image Showdown', desc:'Which AI image generator produces the best results for designers?', cat:'AI Image', date:'Coming Soon' },
+  { slug:'cursor-vs-copilot', title:'Cursor vs GitHub Copilot: Developer Comparison', desc:'The two biggest AI coding tools go head to head. Which one wins?', cat:'AI Coding', date:'Coming Soon' },
+]
+
+export default function Blog() {
+  return (
+    <>
+      <Helmet>
+        <title>AI Tool Comparisons — Head-to-Head Reviews | AI Tools</title>
+        <meta name="description" content="In-depth AI tool comparisons. Jasper vs Writesonic, Midjourney vs Leonardo, and more. Make informed decisions." />
+      </Helmet>
+      <Container maxWidth="xl" sx={{ pt: 6, pb: 10, position:'relative', zIndex:1 }}>
+        <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}}>
+          <Typography variant="h2" fontWeight={700} mb={1} fontSize={{ xs:'1.8rem',md:'2.4rem' }}>Comparisons & Reviews</Typography>
+          <Typography variant="body1" color="#6b6f7e" mb={5}>Head-to-head comparisons and deep dives into AI tools</Typography>
+        </motion.div>
+        <Grid container spacing={3}>
+          {posts.map((post,i) => (
+            <Grid item xs={12} sm={6} md={4} key={post.slug}>
+              <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{delay:i*0.05}}>
+                <Paper component={Link} to={`/blog/${post.slug}`} sx={{ p:4, display:'block', height:'100%','&:hover':{borderColor:'rgba(52,211,153,0.3)',transform:'translateY(-2px)'} }}>
+                  <Chip label={post.cat} size="small" sx={{mb:2,bgcolor:'rgba(52,211,153,0.08)',color:'#6ee7b7',fontWeight:600}} />
+                  <Typography variant="h5" fontWeight={700} mb={1}>{post.title}</Typography>
+                  <Typography variant="body2" color="text.secondary" mb={2}>{post.desc}</Typography>
+                  <Typography variant="caption" color="#5a5f6e">{post.date}</Typography>
+                </Paper>
+              </motion.div>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </>
+  )
+}

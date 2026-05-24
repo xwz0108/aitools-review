@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  background-color:#0a0a14;
+  color:#e8e6f0;
+  overflow-x:hidden;
+}
+
+a{text-decoration:none;color:inherit}
+
+#root{min-height:100dvh}
+
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:3px}
+
+.bg-dots{
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  z-index:0;pointer-events:none;opacity:.2;
+  background-image:radial-gradient(circle,rgba(52,211,153,.12) 1px,transparent 1px);
+  background-size:32px 32px;
+}
+
+.gradient-text{
+  background:linear-gradient(135deg,#6ee7b7 0%,#34d399 50%,#059669 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+
+.glass-card{
+  background:linear-gradient(135deg,rgba(255,255,255,.05) 0%,rgba(255,255,255,.02) 100%);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:22px;
+  transition:all .3s ease;
+}
+.glass-card:hover{
+  border-color:rgba(52,211,153,.3);
+  box-shadow:0 8px 32px rgba(5,150,105,.12);
+  transform:translateY(-2px);
+}

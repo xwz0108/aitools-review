@@ -1,0 +1,354 @@
+[
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "slug": "jasper",
+    "category": "ai-writing",
+    "price": 49,
+    "pricing": "month",
+    "rating": 4.5,
+    "reviews": 3200,
+    "affiliate": "30% Recurring",
+    "free_tier": "7-day trial",
+    "desc": "Best all-around AI writer for long-form content, blog posts, and marketing copy.",
+    "features": [
+      "Long-form content",
+      "SEO mode",
+      "Brand voice",
+      "50+ templates",
+      "Chrome extension"
+    ],
+    "pros": [
+      "Excellent long-form quality",
+      "Built-in SEO integration",
+      "Strong brand voice feature"
+    ],
+    "cons": [
+      "Expensive vs alternatives",
+      "Steep learning curve",
+      "Limited free trial"
+    ],
+    "best_for": "Professional bloggers and marketing teams",
+    "website": "https://jasper.ai"
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "slug": "writesonic",
+    "category": "ai-writing",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.3,
+    "reviews": 2400,
+    "affiliate": "30% Recurring",
+    "free_tier": "Free plan available",
+    "desc": "Affordable AI writer with article generation, chatbots, and image generation built in.",
+    "features": [
+      "Article writer",
+      "Chatsonic",
+      "Image generator",
+      "Landing pages",
+      "Paraphrasing tool"
+    ],
+    "pros": [
+      "Great value for money",
+      "All-in-one platform",
+      "Fast content generation"
+    ],
+    "cons": [
+      "Quality varies by template",
+      "UI can be confusing",
+      "Brand voice needs training"
+    ],
+    "best_for": "Freelancers and small businesses on a budget",
+    "website": "https://writesonic.com"
+  },
+  {
+    "id": "copyai",
+    "name": "Copy.ai",
+    "slug": "copyai",
+    "category": "ai-writing",
+    "price": 49,
+    "pricing": "month",
+    "rating": 4.4,
+    "reviews": 2800,
+    "affiliate": "30% Recurring",
+    "free_tier": "Free plan available",
+    "desc": "AI copywriting tool focused on short-form content, social media, and email marketing.",
+    "features": [
+      "90+ templates",
+      "Brand voice",
+      "Chat interface",
+      "Workflow automation",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Excellent short-form copy",
+      "Great UX and workflow",
+      "Strong team features"
+    ],
+    "cons": [
+      "Less suited for long-form",
+      "Higher tier is expensive",
+      "Occasional generic output"
+    ],
+    "best_for": "Marketing teams and social media managers",
+    "website": "https://copy.ai"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "category": "ai-image",
+    "price": 10,
+    "pricing": "month",
+    "rating": 4.7,
+    "reviews": 5100,
+    "affiliate": "Limited",
+    "free_tier": "None",
+    "desc": "Industry-leading AI image generator known for artistic quality and photorealism.",
+    "features": [
+      "Photorealistic images",
+      "Artistic styles",
+      "Image variations",
+      "Inpainting",
+      "Community prompts"
+    ],
+    "pros": [
+      "Best image quality available",
+      "Amazing artistic control",
+      "Active community"
+    ],
+    "cons": [
+      "No free tier",
+      "Discord-only interface",
+      "Complex prompt system"
+    ],
+    "best_for": "Professional designers and artists",
+    "website": "https://midjourney.com"
+  },
+  {
+    "id": "leonardo",
+    "name": "Leonardo AI",
+    "slug": "leonardo",
+    "category": "ai-image",
+    "price": 12,
+    "pricing": "month",
+    "rating": 4.4,
+    "reviews": 1900,
+    "affiliate": "Yes",
+    "free_tier": "150 credits/day",
+    "desc": "AI image generator with fine-tuned models, canvas editor, and production-ready assets.",
+    "features": [
+      "Fine-tuned models",
+      "Canvas editor",
+      "Image to image",
+      "Alchemy upscaling",
+      "API access"
+    ],
+    "pros": [
+      "Generous free tier",
+      "Production-ready features",
+      "Great for game assets"
+    ],
+    "cons": [
+      "Less photorealistic than MJ",
+      "Can be slow at peak times",
+      "UI learning curve"
+    ],
+    "best_for": "Game developers and content creators",
+    "website": "https://leonardo.ai"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "slug": "cursor",
+    "category": "ai-coding",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.6,
+    "reviews": 4200,
+    "affiliate": "Yes",
+    "free_tier": "Free plan available",
+    "desc": "AI-first code editor built on VS Code. Context-aware completions and chat.",
+    "features": [
+      "Tab completion",
+      "Inline chat",
+      "Entire codebase context",
+      "Terminal commands",
+      "VS Code compatible"
+    ],
+    "pros": [
+      "Best AI completions",
+      "Native VS Code feel",
+      "Context-aware suggestions"
+    ],
+    "cons": [
+      "Requires subscription",
+      "Privacy concerns",
+      "Occasional latency"
+    ],
+    "best_for": "Professional developers who code daily",
+    "website": "https://cursor.sh"
+  },
+  {
+    "id": "copilot",
+    "name": "GitHub Copilot",
+    "slug": "copilot",
+    "category": "ai-coding",
+    "price": 10,
+    "pricing": "month",
+    "rating": 4.5,
+    "reviews": 8900,
+    "affiliate": "Limited",
+    "free_tier": "Free for students/OSS",
+    "desc": "The original AI coding assistant. Deep GitHub integration and multi-IDE support.",
+    "features": [
+      "Code completion",
+      "Chat interface",
+      "Multi-IDE support",
+      "PR descriptions",
+      "Workspace context"
+    ],
+    "pros": [
+      "Deep GitHub integration",
+      "Wide IDE support",
+      "Great for boilerplate code"
+    ],
+    "cons": [
+      "Suggestions can be generic",
+      "Limited context awareness",
+      "Chat features evolving"
+    ],
+    "best_for": "All developers, especially open-source contributors",
+    "website": "https://github.com/features/copilot"
+  },
+  {
+    "id": "surferseo",
+    "name": "Surfer SEO",
+    "slug": "surferseo",
+    "category": "ai-seo",
+    "price": 89,
+    "pricing": "month",
+    "rating": 4.5,
+    "reviews": 2300,
+    "affiliate": "30% Recurring",
+    "free_tier": "7-day trial",
+    "desc": "Content optimization tool that analyzes top-ranking pages and gives actionable recommendations.",
+    "features": [
+      "Content editor",
+      "Keyword research",
+      "SERP analyzer",
+      "Audit tool",
+      "Domain planner"
+    ],
+    "pros": [
+      "Excellent content optimization",
+      "Real-time scoring",
+      "Strong SERP analysis"
+    ],
+    "cons": [
+      "Expensive entry point",
+      "Limited keyword data",
+      "Content editor can be prescriptive"
+    ],
+    "best_for": "SEO professionals and content marketers",
+    "website": "https://surferseo.com"
+  },
+  {
+    "id": "frase",
+    "name": "Frase",
+    "slug": "frase",
+    "category": "ai-seo",
+    "price": 45,
+    "pricing": "month",
+    "rating": 4.3,
+    "reviews": 1400,
+    "affiliate": "Yes",
+    "free_tier": "5 days / $1",
+    "desc": "AI content tool that helps research, write, and optimize content for search engines.",
+    "features": [
+      "Content briefs",
+      "AI writer",
+      "SERP analysis",
+      "Topic clusters",
+      "Content analytics"
+    ],
+    "pros": [
+      "Affordable compared to Surfer",
+      "Good content briefs",
+      "Solid AI writer"
+    ],
+    "cons": [
+      "Less mature than Surfer",
+      "UI can be clunky",
+      "Analysis depth varies"
+    ],
+    "best_for": "Freelance writers and small agencies",
+    "website": "https://frase.io"
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "slug": "runway",
+    "category": "ai-video",
+    "price": 15,
+    "pricing": "month",
+    "rating": 4.4,
+    "reviews": 3100,
+    "affiliate": "Yes",
+    "free_tier": "125 credits",
+    "desc": "Professional AI video editor with text-to-video, motion tracking, and green screen capabilities.",
+    "features": [
+      "Text to video",
+      "Motion tracking",
+      "Green screen",
+      "Image to video",
+      "Video editing suite"
+    ],
+    "pros": [
+      "Most comprehensive features",
+      "Professional output quality",
+      "Good for quick edits"
+    ],
+    "cons": [
+      "Credit system limits",
+      "Rendering can be slow",
+      "Learning curve for advanced features"
+    ],
+    "best_for": "Video editors and content creators",
+    "website": "https://runwayml.com"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "slug": "synthesia",
+    "category": "ai-video",
+    "price": 29,
+    "pricing": "month",
+    "rating": 4.5,
+    "reviews": 1800,
+    "affiliate": "Yes",
+    "free_tier": "1 free video",
+    "desc": "AI avatar video generator for creating professional-looking presenter videos without cameras.",
+    "features": [
+      "140+ AI avatars",
+      "120+ languages",
+      "Custom avatars",
+      "Screen recorder",
+      "Templates"
+    ],
+    "pros": [
+      "No filming needed",
+      "Multilingual support",
+      "Professional looking output"
+    ],
+    "cons": [
+      "Avatars still look AI-generated",
+      "Limited free tier",
+      "Expensive for individuals"
+    ],
+    "best_for": "Corporate training and marketing teams",
+    "website": "https://synthesia.io"
+  }
+]
