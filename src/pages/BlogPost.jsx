@@ -422,6 +422,7 @@ const POSTS = {
       { type:'p', text:'Blog featured images, social media graphics, product mockups, concept art, storyboarding, and game assets. AI images save designers hours and can be used commercially with most tools.' },
     ],
   },
+};
 
 const DEFAULTS = { title: 'Article', desc: 'Coming soon', content: [{ type:'p', text:'This article is being written.' }] }
 
