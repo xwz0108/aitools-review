@@ -42,7 +42,7 @@ const POSTS = {
       { type: 'h3', text: '#2 Leonardo AI — Best Value (4.4/5)' },
       { type: 'p', text: 'Leonardo offers 150 free credits per day and fine-tuned models for specific use cases like game assets. The canvas editor and Alchemy upscaling are production-ready. At $12/mo, it is the best option for creators on a budget.' },
       { type: 'h3', text: '#3 DALL-E 3 — Best for Simplicity (4.3/5)' },
-      { type: 'p', text: "Built into ChatGPT Plus, DALL-E 3 is the easiest to use. Just describe what you want in plain English. Image quality is very good but not quite Midjourney level. Great for casual users who already have ChatGPT."'},
+      { type: 'p', text: 'Built into ChatGPT Plus, DALL-E 3 is the easiest to use. Just describe what you want in plain English. Quality is very good. Great for casual users who already have ChatGPT.' },
       { type: 'h2', text: 'Quick Comparison' },
       { type: 'table', headers: ['Tool','Price','Quality','Free Tier','Best For'], rows: [
         ['Midjourney','$10/mo','5/5','None','Professionals'],
