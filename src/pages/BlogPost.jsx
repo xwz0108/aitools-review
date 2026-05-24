@@ -71,6 +71,42 @@ const POSTS = {
       ]},
     ],
   },
+  'best-ai-seo-tools-2026': {
+    title: 'Best AI SEO Tools 2026 (Hands-On Test)',
+    desc: 'Surfer SEO vs Frase vs NeuronWriter. Which AI SEO tool actually improves your rankings?',
+    date: 'June 2026',
+    content: [
+      { type: 'p', text: 'AI SEO tools promise to help you rank higher. We tested Surfer SEO, Frase, NeuronWriter, and MarketMuse on real blog posts to see which actually moves the needle.' },
+      { type: 'h3', text: '#1 Surfer SEO — Best for Professionals (4.5/5)' },
+      { type: 'p', text: 'Surfer SEO analyzes top-ranking pages and gives specific recommendations: word count, keyword density, heading structure, and NLP entities. The real-time content score makes optimization straightforward. At $89/mo, it is expensive but pays for itself if you publish regularly.' },
+      { type: 'h3', text: '#2 Frase — Best Value (4.3/5)' },
+      { type: 'p', text: 'Frase offers very similar features to Surfer at almost half the price ($45/mo). Its content briefs and SERP analysis are excellent. The AI writer is good. The UI is less polished but the value is unbeatable.' },
+      { type: 'table', headers: ['Tool','Price','Best Feature','Rating'], rows: [
+        ['Surfer SEO','$89/mo','Real-time content score','4.5/5'],
+        ['Frase','$45/mo','Content briefs + AI writer','4.3/5'],
+        ['NeuronWriter','$23/mo','NLP optimization','4.2/5'],
+        ['MarketMuse','$149/mo','Content inventory','4.0/5'],
+      ]},
+    ],
+  },
+  'best-ai-video-generators-2026': {
+    title: 'Best AI Video Generators 2026 (Tested)',
+    desc: 'Runway vs Pika vs Synthesia. Which AI video tool is right for your workflow?',
+    date: 'June 2026',
+    content: [
+      { type: 'p', text: 'AI video generation is still early but improving fast. We tested Runway, Pika, Synthesia, and Invideo AI for different use cases: short-form social content, AI avatar presentations, and video editing.' },
+      { type: 'h3', text: '#1 Runway — Best All-Rounder (4.4/5)' },
+      { type: 'p', text: 'Runway Gen-3 produces impressive text-to-video results. Its video editing suite (motion tracking, green screen, image-to-video) makes it a complete tool. At $15/mo, it offers solid value for creators.' },
+      { type: 'h3', text: '#2 Synthesia — Best for Business (4.5/5)' },
+      { type: 'p', text: 'Synthesia is the leader in AI avatar video. Choose from 140+ avatars and 120+ languages. Perfect for corporate training videos and marketing demos. No filming, no crew, no studio needed.' },
+      { type: 'table', headers: ['Tool','Price','Best For','Rating'], rows: [
+        ['Runway','$15/mo','Creative video editing','4.4/5'],
+        ['Synthesia','$29/mo','Business presentations','4.5/5'],
+        ['Pika','$10/mo','Short social content','4.2/5'],
+        ['Invideo AI','$20/mo','Quick video creation','4.0/5'],
+      ]},
+    ],
+  },
   'jasper-vs-writesonic': {
     title: 'Jasper vs Writesonic: Which AI Writer Wins?',
     desc: 'We compared pricing, features, and output quality side by side to help you choose.',

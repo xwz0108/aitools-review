@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Container, Typography, Box, Grid, Card, CardContent, Chip, Stack, Button } from '@mui/material'
+import { Container, Typography, Box, Grid, Card, Chip, Stack, Button, TextField, InputAdornment, Paper } from '@mui/material'
 import { motion } from 'framer-motion'
+import SearchIcon from '@mui/icons-material/Search'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import tools from '../data/tools.json'
 
@@ -16,6 +18,13 @@ const categories = [
 const fadeUp = { initial: { opacity: 0, y: 30 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.5 } }
 
 export default function Home() {
+  const [search, setSearch] = useState('')
+  const filtered = search ? tools.filter(t =>
+    t.name.toLowerCase().includes(search.toLowerCase()) ||
+    t.desc.toLowerCase().includes(search.toLowerCase()) ||
+    t.category.replace('-',' ').includes(search.toLowerCase())
+  ).slice(0, 5) : []
+
   const topTools = tools.filter(t => t.rating >= 4.5).slice(0, 4)
   return (
     <>
@@ -34,9 +43,24 @@ export default function Home() {
             <Typography variant="h1" sx={{ fontSize: { xs: '2rem', md: '3.5rem' }, mb: 2, lineHeight: 1.15 }}>
               Honest <span className="gradient-text">AI Tool</span> Reviews
             </Typography>
-            <Typography variant="body1" sx={{ fontSize: '1.1rem', color: '#6b6f7e', mb: 5, maxWidth: 520, mx: 'auto' }}>
-              We test and compare AI tools so you don't have to. No sponsored reviews. No BS. Just honest comparisons to help you choose.
+            <Typography variant="body1" sx={{ fontSize: '1.1rem', color: '#6b6f7e', mb: 4, maxWidth: 520, mx: 'auto' }}>
+              We test and compare AI tools so you don't have to. No sponsored reviews. Just honest comparisons.
             </Typography>
+            <TextField placeholder="Search AI tools... (e.g. writing, coding, Jasper)" value={search} onChange={e => setSearch(e.target.value)}
+              size="small" sx={{ maxWidth: 400, mx: 'auto', display: 'block', mb: 3 }}
+              InputProps={{ startAdornment: <InputAdornment position="start"><SearchIcon sx={{ color: '#5a5f6e' }} /></InputAdornment>, sx: { borderRadius: 3 } }}
+            />
+            {filtered.length > 0 && (
+              <Paper sx={{ maxWidth: 400, mx: 'auto', mb: 4, p: 1, borderRadius: 3, bgcolor: 'rgba(20,20,31,0.95)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                {filtered.map(t => (
+                  <Box key={t.id} component={Link} to={`/tool/${t.slug}`} onClick={() => setSearch('')}
+                    sx={{ p: 1.5, display: 'block', borderRadius: 2, '&:hover': { bgcolor: 'rgba(52,211,153,0.06)' } }}>
+                    <Typography variant="body2" fontWeight={600} color="#e8e6f0">{t.name}</Typography>
+                    <Typography variant="caption" color="#5a5f6e">{t.category.replace('-',' ').toUpperCase()} · ${t.price}/mo</Typography>
+                  </Box>
+                ))}
+              </Paper>
+            )}
             <Stack direction="row" spacing={2} justifyContent="center">
               <Button variant="contained" component={Link} to="/tools" endIcon={<ArrowForwardIcon />}>Browse All Tools</Button>
               <Button variant="outlined" component={Link} to="/blog">Read Comparisons</Button>
