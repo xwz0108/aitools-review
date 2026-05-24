@@ -7,9 +7,13 @@ const posts = [
   { slug:'best-ai-writing-tools-2026', title:'Best AI Writing Tools 2026 (Tested & Ranked)', desc:'We tested 5 AI writing tools head-to-head. See which one came out on top.', cat:'AI Writing', date:'June 2026' },
   { slug:'best-ai-image-generators-2026', title:'Best AI Image Generators 2026 (Side-by-Side)', desc:'Midjourney vs Leonardo vs DALL-E 3. Which creates the best images?', cat:'AI Image', date:'June 2026' },
   { slug:'best-ai-coding-assistants-2026', title:'Best AI Coding Assistants 2026 (Compared)', desc:'Cursor vs Copilot vs Windsurf. Which IDE assistant is right for you?', cat:'AI Coding', date:'June 2026' },
-  { slug:'jasper-vs-writesonic', title:'Jasper vs Writesonic: Which AI Writer Wins?', desc:'We compared pricing, features, and output quality side by side.', cat:'AI Writing', date:'Coming Soon' },
-  { slug:'midjourney-vs-leonardo', title:'Midjourney vs Leonardo AI: Image Showdown', desc:'Which AI image generator produces the best results for designers?', cat:'AI Image', date:'Coming Soon' },
-  { slug:'cursor-vs-copilot', title:'Cursor vs GitHub Copilot: Developer Comparison', desc:'The two biggest AI coding tools go head to head. Which one wins?', cat:'AI Coding', date:'Coming Soon' },
+  { slug:'best-ai-seo-tools-2026', title:'Best AI SEO Tools 2026 (Hands-On Test)', desc:'Surfer SEO vs Frase vs NeuronWriter. Which actually improves rankings?', cat:'AI SEO', date:'June 2026' },
+  { slug:'best-ai-video-generators-2026', title:'Best AI Video Generators 2026 (Tested)', desc:'Runway vs Pika vs Synthesia. Which AI video tool fits your workflow?', cat:'AI Video', date:'June 2026' },
+  { slug:'jasper-vs-writesonic', title:'Jasper vs Writesonic: Which AI Writer Wins?', desc:'We compared pricing, features, and output quality side by side.', cat:'AI Writing', date:'June 2026' },
+  { slug:'midjourney-vs-leonardo', title:'Midjourney vs Leonardo AI: Image Showdown', desc:'Which AI image generator produces the best results for designers?', cat:'AI Image', date:'June 2026' },
+  { slug:'cursor-vs-copilot', title:'Cursor vs GitHub Copilot: Developer Comparison', desc:'The two biggest AI coding tools go head to head. Which one wins?', cat:'AI Coding', date:'June 2026' },
+  { slug:'surferseo-vs-frase', title:'Surfer SEO vs Frase: Content Optimization Battle', desc:'We tested both AI SEO tools on real blog posts. Side-by-side results.', cat:'AI SEO', date:'June 2026' },
+  { slug:'runway-vs-pika-synthesia', title:'Runway vs Pika vs Synthesia: AI Video Showdown', desc:'Three AI video tools for three different use cases. How to choose.', cat:'AI Video', date:'June 2026' },
 ]
 
 export default function Blog() {
