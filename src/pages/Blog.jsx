@@ -24,6 +24,14 @@ const posts = [
   { slug:'leonardo-ai-review', title:'Leonardo AI Review: Best Midjourney Alternative?', desc:'In-depth review. Pros, cons, free tier analysis, and real examples.', cat:'AI Image', date:'June 2026' },
   { slug:'is-ai-writing-worth-it', title:'Is AI Writing Software Worth It in 2026?', desc:'After 3 months of daily use. Honest take on whether it is worth paying for.', cat:'AI Writing', date:'June 2026' },
   { slug:'ai-image-generation-guide', title:'AI Image Generation: Complete Beginner Guide', desc:'Everything about AI image generation. Tools, prompts, and best practices.', cat:'AI Image', date:'June 2026' },
+  { slug:'how-to-use-jasper', title:'How to Write Blog Posts with Jasper AI — Tutorial', desc:'Step-by-step guide to using Jasper for long-form content.', cat:'Tutorial', date:'May 2026' },
+  { slug:'midjourney-prompt-guide', title:'Midjourney Prompt Guide: Create Better AI Images', desc:'Master parameters, style keywords, and advanced techniques.', cat:'Tutorial', date:'May 2026' },
+  { slug:'how-to-code-with-cursor', title:'How to Code Faster with Cursor AI — Tutorial', desc:'Master tab completion, Cmd+K, and Composer for multi-file edits.', cat:'Tutorial', date:'May 2026' },
+  { slug:'leonardo-ai-tutorial', title:'Getting Started with Leonardo AI — Beginner Guide', desc:'Learn models, canvas editor, upscaling, and production workflows.', cat:'Tutorial', date:'May 2026' },
+  { slug:'surfer-seo-tutorial', title:'Surfer SEO Tutorial: Optimize Content for Rankings', desc:'Content editor, keyword research, and SERP analysis guide.', cat:'Tutorial', date:'May 2026' },
+  { slug:'claude-tips-for-developers', title:'Claude AI Tips & Tricks for Developers (2026)', desc:'Maximize Claude for coding, research, and problem-solving.', cat:'Tutorial', date:'May 2026' },
+  { slug:'runway-tutorial-text-to-video', title:'Runway AI Tutorial: Create Videos from Text', desc:'Learn Gen-3 text-to-video, motion tracking, and green screen editing.', cat:'Tutorial', date:'May 2026' },
+  { slug:'synthesia-tutorial-ai-avatars', title:'Synthesia Tutorial: AI Avatar Videos Step by Step', desc:'Make professional presenter videos with 140+ avatars.', cat:'Tutorial', date:'May 2026' },
 ]
 
 export default function Blog() {
