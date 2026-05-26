@@ -32,6 +32,7 @@ export default function Layout({ children }) {
                   sx={{ borderColor: 'rgba(255,255,255,0.06)', color: '#8b8fa8', fontSize: '0.78rem', '&:hover': { bgcolor: 'rgba(52,211,153,0.08)', color: '#6ee7b7', borderColor: 'rgba(52,211,153,0.2)' } }} />
               ))}
             </Stack>
+            <Chip label="Compare" component={Link} to="/compare" variant="filled" size="small" clickable sx={{ fontWeight: 600, bgcolor: 'rgba(52,211,153,0.12)', color: '#6ee7b7', mr: 0.5 }} />
             <Chip label="Blog" component={Link} to="/blog" variant="filled" size="small" clickable sx={{ fontWeight: 600 }} />
           </Container>
         </Toolbar>
