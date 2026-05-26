@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import tools from '../data/tools.json'
 
-const catNames = { 'ai-chatbot':'AI Chatbots','ai-writing':'AI Writing Tools','ai-image':'AI Image Generators','ai-coding':'AI Coding Assistants','ai-seo':'AI SEO Tools','ai-video':'AI Video Creators' }
+const catNames = { 'ai-chat':'AI Chat','ai-writing':'AI Writing Tools','ai-image':'AI Image Generators','ai-coding':'AI Coding Assistants','ai-seo':'AI SEO Tools','ai-video':'AI Video Creators' }
 const allCategories = Object.entries(catNames)
 
 export default function Leaderboard() {

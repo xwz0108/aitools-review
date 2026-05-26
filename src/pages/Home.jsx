@@ -8,7 +8,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import tools from '../data/tools.json'
 
 const categories = [
-  { name: 'AI Chatbots', slug: 'ai-chatbot', desc: 'Compare Claude, ChatGPT, and other conversational AI assistants', icon: '🤖', gradient: 'linear-gradient(135deg, #6366f1, #818cf8)' },
+  { name: 'AI Chat', slug: 'ai-chat', desc: 'Compare Claude and Perplexity — the best AI research and chat assistants', icon: '🤖', gradient: 'linear-gradient(135deg, #6366f1, #818cf8)' },
   { name: 'AI Writing Tools', slug: 'ai-writing', desc: 'Generate blog posts, social copy, emails, and marketing content', icon: '✍️', gradient: 'linear-gradient(135deg, #8b5cf6, #a78bfa)' },
   { name: 'AI Image Generators', slug: 'ai-image', desc: 'Create stunning artwork, designs, and photorealistic images', icon: '🎨', gradient: 'linear-gradient(135deg, #ec4899, #f472b6)' },
   { name: 'AI Coding Assistants', slug: 'ai-coding', desc: 'Write code faster with AI autocomplete, chat, and refactoring', icon: '💻', gradient: 'linear-gradient(135deg, #06b6d4, #22d3ee)' },

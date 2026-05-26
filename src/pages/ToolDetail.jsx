@@ -7,7 +7,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'
 import tools from '../data/tools.json'
 
-const catNames = { 'ai-chatbot': 'AI Chatbot', 'ai-writing': 'AI Writing', 'ai-image': 'AI Image', 'ai-coding': 'AI Coding', 'ai-seo': 'AI SEO', 'ai-video': 'AI Video' }
+const catNames = { 'ai-chat': 'AI Chat', 'ai-writing': 'AI Writing', 'ai-image': 'AI Image', 'ai-coding': 'AI Coding', 'ai-seo': 'AI SEO', 'ai-video': 'AI Video' }
 
 export default function ToolDetail() {
   const { slug } = useParams()

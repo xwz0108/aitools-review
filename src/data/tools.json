@@ -611,7 +611,7 @@
     "id": "claude",
     "name": "Claude",
     "slug": "claude",
-    "category": "ai-chatbot",
+    "category": "ai-chat",
     "price": 20,
     "pricing": "month",
     "rating": 4.6,
@@ -638,5 +638,165 @@
     ],
     "best_for": "Professionals needing deep analysis",
     "website": "https://claude.ai"
+  },
+  {
+    "id": "wordtune",
+    "name": "Wordtune",
+    "slug": "wordtune",
+    "category": "ai-writing",
+    "price": 25,
+    "pricing": "month",
+    "rating": 4.2,
+    "reviews": 1500,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "AI writing assistant focused on rewriting and improving existing text. Great for editing.",
+    "features": [
+      "Rewrite suggestions",
+      "Tone adjustment",
+      "Summarizer",
+      "Chrome extension",
+      "MS Word add-in"
+    ],
+    "pros": [
+      "Excellent rewriting quality",
+      "Great for editing",
+      "Strong browser integration"
+    ],
+    "cons": [
+      "Not for generating from scratch",
+      "Limited free tier",
+      "No SEO features"
+    ],
+    "best_for": "Writers who need editing and rewriting help",
+    "website": "https://wordtune.com"
+  },
+  {
+    "id": "neuronwriter",
+    "name": "NeuronWriter",
+    "slug": "neuronwriter",
+    "category": "ai-seo",
+    "price": 23,
+    "pricing": "month",
+    "rating": 4.2,
+    "reviews": 800,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "NLP-powered content optimization. Affordable Surfer SEO alternative with AI writing.",
+    "features": [
+      "NLP optimization",
+      "Content editor",
+      "AI writer",
+      "Competitor analysis",
+      "Content planner"
+    ],
+    "pros": [
+      "Very affordable",
+      "NLP recommendations",
+      "All-in-one platform"
+    ],
+    "cons": [
+      "Smaller user base",
+      "Less polished UI",
+      "Fewer integrations"
+    ],
+    "best_for": "Budget-conscious SEO content writers",
+    "website": "https://neuronwriter.com"
+  },
+  {
+    "id": "invideo",
+    "name": "InVideo AI",
+    "slug": "invideo",
+    "category": "ai-video",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.0,
+    "reviews": 1600,
+    "affiliate": "Yes",
+    "free_tier": "Free plan",
+    "desc": "AI video creation platform. Turn text prompts into full videos with stock footage and AI voiceover.",
+    "features": [
+      "Text to video",
+      "AI voiceover",
+      "Stock library",
+      "Templates",
+      "Brand kit"
+    ],
+    "pros": [
+      "Full video from text",
+      "Huge stock library",
+      "Quick results"
+    ],
+    "cons": [
+      "Limited creative control",
+      "Watermark on free",
+      "AI voice can sound robotic"
+    ],
+    "best_for": "Marketers creating quick explainer videos",
+    "website": "https://invideo.io"
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "slug": "heygen",
+    "category": "ai-video",
+    "price": 29,
+    "pricing": "month",
+    "rating": 4.3,
+    "reviews": 1100,
+    "affiliate": "Yes",
+    "free_tier": "1 free video",
+    "desc": "AI video with talking avatars. Create presenter videos in minutes without filming.",
+    "features": [
+      "Talking avatars",
+      "Voice cloning",
+      "Video translation",
+      "Templates",
+      "API access"
+    ],
+    "pros": [
+      "Realistic avatar movement",
+      "Voice cloning quality",
+      "Video translation unique"
+    ],
+    "cons": [
+      "Credit limits",
+      "Avatar selection limited",
+      "Expensive for individuals"
+    ],
+    "best_for": "Business communication and training videos",
+    "website": "https://heygen.com"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "category": "ai-chat",
+    "price": 20,
+    "pricing": "month",
+    "rating": 4.4,
+    "reviews": 2800,
+    "affiliate": "None",
+    "free_tier": "Free plan",
+    "desc": "AI-powered research assistant with real-time web search and citations.",
+    "features": [
+      "Web search",
+      "Citations",
+      "File upload",
+      "Pro search",
+      "Collections"
+    ],
+    "pros": [
+      "Best for research",
+      "Real citations",
+      "Fast web search"
+    ],
+    "cons": [
+      "Not for creative writing",
+      "Limited chat memory",
+      "Pro needed for deep research"
+    ],
+    "best_for": "Researchers and fact-checkers",
+    "website": "https://perplexity.ai"
   }
 ]
